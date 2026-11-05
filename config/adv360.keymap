@@ -27,6 +27,7 @@
 
     // Inner keys beside T/G/Y/H are Home/End/Page Up/Page Down.
     // Their former thumb positions now carry hotkeys 1/2/3/4 on every layer.
+    // Thumb hotkey 4 holds Ctrl+Option; add this as Wispr Flow's push-to-talk shortcut.
     default_layer {
       display-name = "Base";
       bindings = <
@@ -34,7 +35,7 @@
         &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &kp HOME                                                         &kp PG_UP &kp Y &kp U &kp I   &kp O    &kp P    &kp BSLH
         &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &kp END        &kp LGUI &kp LALT &kp LCTRL &kp RGUI               &kp PG_DN &kp H &kp J &kp K   &kp L    &kp SEMI &kp SQT
         &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &mo 4 &none                                 &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-        &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp DEL &kp LC(LA(LS(LGUI))) &none &kp ENTER &kp SPACE          &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo 2
+        &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp DEL &kp LC(LA(LS(LGUI))) &kp LC(LALT) &kp ENTER &kp SPACE   &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo 2
       >;
     };
     keypad {
@@ -44,7 +45,7 @@
         &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &kp HOME                                                         &kp PG_UP &kp Y &kp KP_N7 &kp KP_N8 &kp KP_N9    &kp KP_MINUS    &kp BSLH
         &kp ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &kp END        &kp LGUI &kp LALT &kp LCTRL &kp RGUI               &kp PG_DN &kp H &kp KP_N4 &kp KP_N5 &kp KP_N6    &kp KP_PLUS     &kp SQT
         &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &mo 4 &none                                 &kp N  &kp KP_N1  &kp KP_N2    &kp KP_N3     &kp KP_ENTER    &kp RSHFT
-        &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp DEL &kp LC(LA(LS(LGUI))) &none &kp ENTER &kp KP_N0          &kp UP     &kp DOWN     &kp KP_DOT    &kp RBKT        &mo 2
+        &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp DEL &kp LC(LA(LS(LGUI))) &kp LC(LALT) &kp ENTER &kp KP_N0   &kp UP     &kp DOWN     &kp KP_DOT    &kp RBKT        &mo 2
       >;
     };
     fn {
